@@ -1,0 +1,67 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* Header Stylesheet                     */
+/*****************************************/
+
+/* Class for page header section 
+ *	~sets size for standard header container 
+ *	~gives it a little top cushion */
+.header_div {
+	width: 800px;
+	height: 200px;
+	margin-top: 5%;
+}
+
+/* Class for page body section 
+ *	~sets size for standard body container 
+ *	~gives it a little top cushion */
+.body_div {
+        width: 800px;
+        margin-top: 1%;
+}
+
+/* Class for page footer section 
+ *	~sets size for standard footer container */
+.footer_div {
+        height: 200px;
+}
+
+/* Class for menu item clickable divs
+ *	~sets size of containers
+ *	~sets invisibility items to max */
+.menu {
+	height: 27px;
+	margin-top: -68px;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+}
+
+/* Class for home menu item
+ *	~matches position and size of home menu item */
+.home {
+	width: 90px;
+	margin-left: 37px;
+}
+
+/* Class for about me menu item
+ *	~matches position and size of about me menu item */
+.about_me {
+	width: 138px;
+	margin-left: 135px;
+}
+
+/* Class for my work menu item
+ *	~matches position and size of my work menu item */
+.my_work {
+	width: 132px;
+	margin-left: 280px;
+}
+
+/* Class for contact me menu item
+ *	~matches position and size of contact me menu item */
+.contact_me {
+	width: 150px;
+	margin-left: 420px;
+}

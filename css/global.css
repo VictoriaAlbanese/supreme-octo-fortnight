@@ -1,0 +1,65 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* Global Stylesheet                     */
+/*****************************************/
+
+@font-face {
+	font-family: "Poor Richard Regular";
+	src: url(../fonts/poor_richard_regular.ttf) format("truetype");
+}
+
+/* Reformats spans
+ *      ~used for links
+ *      ~designed to fill div containing link */
+span {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+/* Reformates images
+ *	~makes all images fill their containers */
+img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Reformats text
+ *	~makes everything correct font */
+p {
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 20;
+}
+
+/* Reformats header
+ *	~makes everything correct font */
+h1 {
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 40;
+	font-weight: normal;
+}
+
+/* Reformats econdary eader
+ *	~makes everything correct font */
+h2 {
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 24;
+	text-align: center;
+	font-weight: normal;
+}
+
+a {
+    	text-decoration: none;
+	box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
+}
+
+/* Horizontal centering style
+ *	~centers item horizontally within container */
+.centered {
+	margin: 0 auto;
+	display: block;
+}

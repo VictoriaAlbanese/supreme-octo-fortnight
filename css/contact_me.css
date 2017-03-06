@@ -1,0 +1,60 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* Contact Me Stylesheet                 */
+/*****************************************/
+
+/* Reformats body of page
+ *	~medium soft blue color */
+body {
+	background-color: #AEBBBA;
+}
+
+/* Reformats page text
+ *	~gives text margin to breathe
+ *	~sets color to a dark blue
+ *	~sets font size */
+p {
+	margin: 30px 0px 0px 30px;
+	color: #164249;	
+}
+
+/* Reformats header
+ *	~gives text margin to breathe
+ *	~sets color to a dark blue
+ *	~sets font size
+ *	~removes default boldness */
+h1 {
+	margin: 30px 0px -10px 30px;
+	color: #164249;	
+	font-size: 34;
+}
+
+/* Reformats link
+ *	~matches color of text (dark blue color) */
+a {
+	color: #164249;
+}
+
+/* Class for the image in the page body
+ *	~sets size of image
+ *	~sets position of image */
+.body_pic_frame {
+	width: 380px;
+	height: 465px;
+	margin-left: 420px;
+	margin-top: -380px;
+}
+
+/* Class for the body section containing text
+ *	~sets size of container
+ *	~sets position of container on screen
+ *	~sets the color of the div to a pale blue */
+.words {
+	width: 535px;
+	height: 300px;
+	margin-top: 80px;
+	display: inline-block;
+	background-color: #EEF0ED;
+	z-index: 0;
+}

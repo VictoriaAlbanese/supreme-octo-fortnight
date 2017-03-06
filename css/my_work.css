@@ -1,0 +1,82 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* My Work Stylesheet                    */
+/*****************************************/
+
+/* Reformats body of page
+ *      ~siena background color */
+body {
+	background-color: #C7A690;
+}
+
+/* Reformats page text
+ *	~gives text margin to breathe
+ *	~sets color to a dark red
+ *	~sets font size */
+p {
+	margin: 20px 25px -10px 25px;
+	color: #310804;	
+}
+
+/* Reformats header
+ *	~gives text margin to breathe
+ *	~sets color to a dark red
+ *	~sets font size 
+ *	~removes default boldness */
+h1 {
+	margin: 20px 20px -10px 20px;
+	color: #310804;	
+}
+
+/* Reformats link
+ *	~matches color of text (dark red color) */
+a {
+	color: #310804;
+	box-shadow: inset 0 0px 0 white, inset 0 -1px 0 #310804;
+}
+
+/* Class for the pic and swirls
+	~sets size and position */
+.side_deco {
+	width: 300px;
+	position: absolute;
+}
+
+/* Class for the image in the page body
+	~sets size of image */
+.body_pic_sunflower {
+	width: 300px;
+	height: 300px;
+}
+
+/* Class for the decorativee swirls around image
+ *	~sets size of swirl containers
+ *	~gives containers breathing room on all sizes */
+.swirl {
+	width: 92%;
+	height: 120px;
+	margin: 5px 10px;
+}
+
+/* Class fot the upper swirl
+ *	~gives it a little extra margin space on the top */
+.up {
+	margin-top: 7px;
+}
+
+/* Class for the body section containing text
+ *	~sets size of container
+ *	~sets position of container on screen
+ *	~sets color of the div to a deep purple */
+.words {
+	width: 470px;
+	height: 550px;
+	padding-bottom: 0px;
+	margin-top: -290px;
+	margin-left: 330px;
+	display: inline-block;
+	background-color: #EED1C1;
+	text-align: center;
+	z-index: 0;
+}

@@ -1,0 +1,34 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* My Work Stylesheet                    */
+/*****************************************/
+
+/* Reformats page text
+ *	~gives text margin to breathe
+ *	~sets color to a dark red
+ *	~sets font size */
+p {
+	margin-top: 30px;
+}
+
+/* Class for page body section
+ *      ~sets size for standard body container
+ *      ~gives it a little top cushion */
+.body_div {
+        height: 930px;
+}
+
+/* Class fot the upper swirl
+ *	~gives it a little extra margin space on the top */
+.up {
+	margin-top: 200px;
+}
+
+/* Class for the body section containing text
+ *	~sets size of container
+ *	~sets position of container on screen
+ *	~sets color of the div to a deep purple */
+.words {
+	height: 980px;
+}

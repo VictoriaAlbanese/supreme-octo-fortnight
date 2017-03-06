@@ -1,0 +1,75 @@
+
+/*****************************************/
+/* Stylesheet for my UML Website	 */
+/* About Me Stylesheet                   */
+/*****************************************/
+
+/* Reformats body of page
+ *      ~pale blue background color */
+body {
+	background-color: #EEF0ED;
+}
+
+/* Reformats page text
+ *	~gives text margin to breathe
+ *	~sets color to a pale blue
+ *	~sets font size */
+p {
+	margin: 20px;
+	color: #EEF0ED;	
+	font-size: 18;
+}
+
+/* Reformats header
+ *	~gives text margin to breathe
+ *	~sets color to a pale blue
+ *	~sets font size 
+ *	~removes default boldness */
+h1 {
+	margin: 13px 20px 20px 20px;
+	color: #EEF0ED;	
+	font-size: 34;
+	font-weight: normal;
+}
+
+/* Reformats link
+ *	~matches color of text (pale blue color) */
+a {
+	color: #EEF0ED;
+}
+
+/* Class for the image in the page body
+	~sets size of image */
+.body_pic_lightsaber {
+	width: 250px;
+	height: 250px;
+}
+
+/* Class for the decorativee swirls around image
+ *	~sets size of swirl containers
+ *	~gives containers breathing room on all sizes */
+.swirl {
+	width: 90%;
+	height: 100px;
+	margin: 5px 10px;
+}
+
+/* Class fot the upper swirl
+ *	~gives it a little extra margin space on the top */
+.up {
+	margin-top: 22px;
+}
+
+/* Class for the body section containing text
+ *	~sets size of container
+ *	~sets position of container on screen
+ *	~sets color of the div to a deep purple */
+.words {
+	width: 520px;
+	height: 480px;
+	margin-top: -240px;
+	margin-left: 280px;
+	display: inline-block;
+	background-color: #4A2634;
+	z-index: 0;
+}
