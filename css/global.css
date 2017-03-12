@@ -1,17 +1,97 @@
 
-/*****************************************/
-/* Stylesheet for my UML Website	 */
-/* Global Stylesheet                     */
-/*****************************************/
+/****************************************************************************/
+/*                                                                          */
+/* Custom Color and Font Setup                                              */
+/*                                                                          */
+/****************************************************************************/
 
+/* Setting color variables */
+:root {
+	--limited: #164249;
+	--middleton: #AEBBBA;
+	--overdose: #EEF0ED;
+}
+
+/* Setting custom font*/
 @font-face {
 	font-family: "Poor Richard Regular";
 	src: url(../fonts/poor_richard_regular.ttf) format("truetype");
 }
 
-/* Reformats spans
- *      ~used for links
- *      ~designed to fill div containing link */
+
+/****************************************************************************/
+/*                                                                          */
+/* Custom Color and Font Setup                                              */
+/*                                                                          */
+/****************************************************************************/
+
+/* Reformatting page body
+ * 	~set background color */
+body {
+	background-color: var(--middleton);
+}
+
+/* Reformatting standard text
+ * 	~set font 
+ * 	~set size */
+p {
+	color: var(--limited);
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 20;
+	margin: 30px;
+}
+
+/* Reformatting header 1
+ * 	~set font 
+ * 	~set size
+ *	~make bold 
+ *	~arrange margins nicely */
+h1 {
+	color: var(--limited);
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 50;
+	font-weight: normal;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/* Reformatting header 2
+ * 	~set font 
+ * 	~set size
+ *	~make bold
+ *	~center it
+ *	~arrange margins nicely */
+h2 {
+	color: var(--limited);
+	font-family: "Poor Richard Regular", Times New Roman, serif;
+	font-size: 26;
+	font-weight: normal;
+	text-align: center;
+	margin: 0px 20px;
+}
+
+/* Reformatting links
+ *	~set color
+ * 	~improve underline style */
+a {
+	color: var(--limited);
+    	text-decoration: none;
+	box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
+}
+
+/* Reformatting horizontal rules
+ *	~set color
+ *	~set thickness */
+hr {
+	border-color: var(--limited);
+	border-size: 2px;
+}
+
+/* Reformatting page body
+ * 	~make span fill container
+ * 	~position span to top left corner of container */
 span {
 	width: 100%;
 	height: 100%;
@@ -21,45 +101,172 @@ span {
 	z-index: 1;
 }
 
-/* Reformates images
- *	~makes all images fill their containers */
+/* Reformatting page body
+ *	~make image fill container */
 img {
 	width: 100%;
 	height: 100%;
 }
 
-/* Reformats text
- *	~makes everything correct font */
-p {
-	font-family: "Poor Richard Regular", Times New Roman, serif;
-	font-size: 20;
-}
 
-/* Reformats header
- *	~makes everything correct font */
-h1 {
-	font-family: "Poor Richard Regular", Times New Roman, serif;
-	font-size: 40;
-	font-weight: normal;
-}
+/****************************************************************************/
+/*                                                                          */
+/* Core Div Classes                                                         */
+/*                                                                          */
+/****************************************************************************/
 
-/* Reformats econdary eader
- *	~makes everything correct font */
-h2 {
-	font-family: "Poor Richard Regular", Times New Roman, serif;
-	font-size: 24;
-	text-align: center;
-	font-weight: normal;
-}
-
-a {
-    	text-decoration: none;
-	box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
-}
-
-/* Horizontal centering style
- *	~centers item horizontally within container */
+/* Class for centering elements
+ *	~centers element */
 .centered {
 	margin: 0 auto;
 	display: block;
 }
+
+/* Class for page headerdiv
+ * 	~set color
+ *      ~sets size for standard header container
+ *      ~gives it a little top cushion */
+.header_div {
+        background-color: var(--limited);
+        width: 800px;
+        height: 200px;
+        margin-top: 5%;
+}
+
+/* Class for page body_div
+ *      ~sets size for standard body container
+ *      ~gives it a little top and bottom cushion
+ *      ~enables chile elements to be positioned side by side */
+.body_div {
+        width: 800px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+}
+
+/* Class for page footer_div
+ *      ~sets size for standard footer container
+ *      ~gives it a little bottom cushion */
+.footer_div {
+        width: 800px;
+        height: 100px;
+        margin-bottom: 5%;
+	text-align: center;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Header Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+/* Class for the title of the header
+ *      ~set color
+ *      ~make size huge
+ *	~set margins/padding accordingly
+ *	~make it side-by-sideable */
+.title {
+        color: var(--overdose);
+        font-size: 85px;
+        margin-top: 0px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        display: inline-block;
+}
+
+/* Class for butterfly silhouette
+ *	~set size
+ *	~set margins/padding accordingly
+ *	~make it side-by-sideable */
+.butterfly {
+        width: 75px;
+        height: 75px;
+        padding-top: -20px;
+        padding-left: 10px;
+        display: inline-block;
+}
+
+/* Class for cute accidental stripe 
+ *	~set color */
+.stripe {
+        background-color: var(--overdose);
+}
+
+/* Class for menu items
+ *	~set color
+ *	~set size
+ *	~make side-by-sideable */
+.menu {
+        border-color: var(--limited);
+        height: 30px;
+        display: inline-block;
+}
+
+/* Class for leftmost menu item
+ *	~set the left margin to space it well */
+.leftmost {
+        margin-left: 25px;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Body Related Classes                                                     */
+/*                                                                          */
+/****************************************************************************/
+
+/* Class for the body section containing the sidebar
+ *      ~set width of container */
+.sidebar_div {
+        width: 24%;
+}
+
+/* Class for the body section used to separate sidebar and content divs
+ *      ~set width of container */
+.spacing_div {
+        width: 4%;
+}
+
+/* Class for the body section containing text
+ *	~set color of container
+ *      ~set width of container
+ *	~set margins nicely */
+.content_div {
+        background-color: var(--overdose);
+        width: 68%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+}
+
+/* Class making horizontal rule less wide
+ *	~make it the proper width
+ *	~give it proper bottom padding */
+.slim {
+	width: 90%;
+	margin-bottom: 2px;
+}
+
+/* Class for horizontal rule at page bottom
+ *	~give it ample bottom padding */
+.page_bottom {
+	margin-bottom: 50px;
+}
+
+
+/****************************************************************************/
+/*                                                                          */
+/* Footer Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+/* Class for the text in the footer
+ *	~makes it a little smaller
+ *	~gets rid of the margins */
+.footer_text {
+	font-size: 16;
+	margin: 0px;
+}
+
+/****************************************************************************/
