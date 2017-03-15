@@ -21,7 +21,7 @@
 
 /****************************************************************************/
 /*                                                                          */
-/* Custom Color and Font Setup                                              */
+/* Built-In Class Reformatting                                              */
 /*                                                                          */
 /****************************************************************************/
 
@@ -86,7 +86,7 @@ a {
  *	~set thickness */
 hr {
 	border-color: var(--limited);
-	border-size: 2px;
+	size: 2px;
 }
 
 /* Reformatting page body
@@ -163,7 +163,7 @@ img {
  *	~make it side-by-sideable */
 .title {
         color: var(--overdose);
-        font-size: 85px;
+        font-size: 85;
         margin-top: 0px;
         padding-top: 25px;
         padding-bottom: 5px;
@@ -246,7 +246,7 @@ img {
 /* Class for horizontal rule at page bottom
  *	~give it ample bottom padding */
 .page_bottom {
-	margin-bottom: 50px;
+	margin-bottom: 50px !important;
 }
 
 

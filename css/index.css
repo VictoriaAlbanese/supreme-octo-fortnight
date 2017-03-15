@@ -1,95 +1,175 @@
 
-/*****************************************/
-/* Stylesheet for my UML Website	 */
-/* Homepage Stylesheet                   */
-/*****************************************/
+/****************************************************************************/
+/*                                                                          */
+/* Core Div Classes                                                         */
+/*                                                                          */
+/****************************************************************************/
 
-/* Reformats body of page
- *	~peachy background color */
-body {
-	background-color: #EED1C1;
+/* Class for page headerdiv
+ * 	~set color
+ *      ~sets size for standard header container
+ *      ~gives it a little top cushion */
+.top_div {
+        background-color: var(--limited);
+        width: 800px;
+        height: 100px;
+        margin-top: 4%;
 }
 
-/* Class for div for homepage image
- *	~sizes it
- *	~centers it */
-.the_big_one {
-	display: block;
-	width: 800px;
-	height: 520px;
-	margin: 0 auto;
-	margin-top: 4%;
+/* Class for page body_div
+ *      ~sets size for standard body container
+ *      ~gives it a little top and bottom cushion
+ *      ~enables chile elements to be positioned side by side */
+.middle_div {
+        background-color: var(--overdose);
+        width: 800px;
+        height: 330px;
+	display: flex;
 }
 
-/* Class for menu items at top of image
- *	~sets size of image
- *	~sets invisibility to max */
+/* Class for page footer_div
+ *      ~sets size for standard footer container
+ *      ~gives it a little bottom cushion */
+.bottom_div {
+        background-color: var(--limited);
+        width: 800px;
+        height: 90px;
+}
+
+/****************************************************************************/
+/*                                                                          */
+/* Header Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+/* Reformatting header 2
+ *	~fixing the color
+ *	~fixing the font size */
+h2 {
+	color: var(--overdose);
+	font-size: 32;
+}
+
+/* Reformatting menu
+ *	~fixing the spacing
+ *	~adding cool borders */
 .menu {
-	position: absolute;
-	height: 40px;
-	margin-top: -490px;
-	background-color: transparent;
-	border: none;
+	margin-top: 35px;
+	padding: 0px 20px;
+	border-color: var(--overdose);
+	border-style: none solid;
+	border-width: 2px;
 }
 
-/* Class for home menu item
- *	~matches position of home menu item */
-.home {
-	width: 150px;
+/* Reformatting leftmost
+ *	~fixing the margins
+ *	~fixing the border so that it's only on one side */
+.leftmost {
+	margin-left: 0px;
+	border-style: none solid none none;
 }
 
-/* Class for about me menu item
- *	~matches position of about me menu item */
-.about_me {
-	width: 195px;
-	margin-left: 165px;
+/* Reformatting leftmost
+ *	~fixing the border so that it's only on one side */
+.rightmost {
+	border-style: none none none solid;
 }
 
-/* Class for my work menu item
- *	~matches position of my work menu item */
-.my_work {
-	width: 190px;
-	margin-left: 375px;
+
+/****************************************************************************/
+/*                                                                          */
+/* Body Related Classes                                                     */
+/*                                                                          */
+/****************************************************************************/
+
+/* Class for picture of me
+ *	~set correct size
+ *	~move it a bit to the left */
+.me {
+	width: 310px;
+	height: 330px;
+	padding-left: 20px;
 }
 
-/* Class for contact me menu item
- *	~matches position of contact me menu item */
-.contact_me {
-	width: 220px;
-	margin-left: 580px;
+/* Class for the words container
+ *	~set size
+ *	~center text */
+.words {
+	width: 460px;
+	text-align: center;
 }
 
-/* Class for bottom logos
- *	~matches size of image
- *	~matches height of image on page */
-.logo {
-	position: absolute;
-	width: 46px;
-	height: 42px;
-	border-radius: 5px;
-	margin-top: -70px;
+/* Class for the big title
+ *	~set the font size */
+.big_title {
+	font-size: 58;
 }
 
-/* Class for github logo
- *	~matches position of github logo */
-.github {
-	margin-left: 525px;
+/* Class for the subititles
+ *	~set the font size
+ *	~set the margins */
+.subtitle {
+	font-size: 32;
+	margin: 0px;
+	margin-top: 5px;
 }
 
-/* Class for linkedin logo
- *	~matches position of linkedin logo */
-.linkedin {
-	margin-left: 590px;
+/* Class which mimics a newline for the subtitles
+ *	~sets margins */
+.newline {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-/* Class for facebook logo
- *	~matches position of facebook logo */
-.facebook {
-	margin-left: 653px;
+/* Reformatting slim
+ *	~make it slimmer
+ *	~fix the margins */
+.slim {
+	width: 80%;
+	margin-bottom: 10px;
 }
 
-/* Class for pinterest logo
- *	~matches position of pinterest logo */
-.pinterest {
-	margin-left: 716px;
+
+/****************************************************************************/
+/*                                                                          */
+/* Footer Related Classes                                                   */
+/*                                                                          */
+/****************************************************************************/
+
+/* Reformat footer text class
+ *	~fix the color
+ *	~fix the positioning
+ *	~fix the font size and alignment
+ *	~make it side-by-sideable */
+.footer_text {
+	color: var(--overdose);
+	padding-top: 20px;
+	padding-left: 190px;
+	font-size: 20;
+	text-align: center;
+	display: inline-block;
 }
+
+/* Reformat links
+ *	~fix color
+ *	~remove underline */
+a {
+	color: var(--overdose);
+	box-shadow: none;
+}
+
+/* Class for butterfly silhouette
+ *	~set size
+ *	~set padding accordingly
+ *	~make it side-by-sideable */
+.butterfly {
+        width: 50px;
+        height: 50px;
+        padding-top: 20px;
+        padding-right: 30px;
+	float: right;
+	display: inline-block;
+}
+
+
+/****************************************************************************/
