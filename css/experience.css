@@ -1,0 +1,47 @@
+
+/****************************************************************************/
+/*                                                                          */
+/* Built-In Class Reformatting                                              */
+/*                                                                          */
+/****************************************************************************/
+
+/* Reformatting standard text
+ * 	~set font 
+ * 	~set size */
+.centered_text {
+	margin-top: 5px;	
+	padding: 0px 50px;
+	text-align: center;
+}
+
+.centered_title {
+	text-align: center;
+}
+
+/* Reformatting header 2
+ * 	~set font 
+ * 	~set size
+ *	~make bold
+ *	~center it
+ *	~arrange margins nicely */
+.subtitle {
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-size: 30;
+	font-weight: bold;
+}
+
+.info {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.line1 {
+	margin-top: 20px;
+}
+
+.shrink {
+	font-size: 44px;
+}
+
+/****************************************************************************/
